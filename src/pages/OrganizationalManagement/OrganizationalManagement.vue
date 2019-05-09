@@ -1,9 +1,13 @@
 <template>
-    <div>12345</div>
+    <div class="one">
+      <div class="two"></div>
+      <NewTime/>
+    </div>
 </template>
 
 <script>
     import { mapState } from "vuex";
+    import NewTime from "../../components/NewTime"
     export default {
         name: "OrganizationalManagement",
         data(){
@@ -11,23 +15,32 @@
 
             }
         },
-        methids:{
+        methods:{
 
         },
         computed: {
             ...mapState({
-                queryDate: state => state.organizationalManagement.queryDate
+              organizationalManagement: state => state.organizationalManagement
             })
         },
         mounted(){
-          this.$store.dispatch("unionInstitution")
+          this.$store.dispatch("unionInstitution",{name:"asdsa"})
             .then(()=>{
-              console.log(1111)
+                console.log(this.organizationalManagement)
             })
-        }
+        },
+      components: {
+        NewTime
+      }
+
     }
 </script>
 
-<style lang="less" scoped>
-
+<style  lang="less">
+ @import "../../../static/css/rem";
+  div.one{
+    width: 375/@rem;
+    height: 300/@rem;
+    background: #f00;
+  }
 </style>

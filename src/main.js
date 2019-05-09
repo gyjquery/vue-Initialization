@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 Vue.config.productionTip = false
 import store from './store/system'
-import './mock/mockServer'
+import '../mock/mockServer'
+import rem from '../static/js/rem'
+rem()
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

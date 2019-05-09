@@ -1,2 +1,4 @@
 import ajax from './request'
-export const reqSendCode = () => ajax('/headCateList')
+import apiList from './apiList'
+export const reqSendCode = (data) => ajax(apiList.todayHourGraphData,data,'POST')
+export const newDatas = (data) => ajax(apiList.newData,data,'POST')

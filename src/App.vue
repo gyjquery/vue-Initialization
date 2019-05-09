@@ -10,10 +10,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
-  @import "../static/css/reset";
-      #app{
-        background: #ff0;
-      }
-
+<style lang="less">
+  @import '../static/css/reset';
 </style>
