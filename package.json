@@ -15,9 +15,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "better-scroll": "^1.15.2",
     "mockjs": "^1.0.1-beta3",
+    "vant": "^1.6.17",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vuescroll": "^4.12.2",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -28,6 +31,7 @@
     "babel-jest": "^21.0.2",
     "babel-loader": "^7.1.1",
     "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-import": "^1.11.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.22.0",

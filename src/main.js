@@ -8,7 +8,15 @@ import store from './store/system'
 import '../mock/mockServer'
 import rem from '../static/js/rem'
 rem()
-/* eslint-disable no-new */
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Vant);
+
+import vuescroll from 'vuescroll';
+import 'vuescroll/dist/vuescroll.css';
+
+Vue.use(vuescroll);
 new Vue({
   el: '#app',
   router,

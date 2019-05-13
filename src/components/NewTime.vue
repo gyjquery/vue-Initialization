@@ -1,11 +1,10 @@
 <template>
-  <div >
-    天天快乐
-  </div>
+
 </template>
 
 <script>
   import { mapState } from "vuex";
+  import BScroll from 'better-scroll'
   export default {
     name: "NewTime",
     data(){
@@ -22,10 +21,11 @@
       })
     },
     mounted(){
-      this.$store.dispatch("union",{age:"456"})
-        .then(()=>{
-             console.log(this.NewData)
-        })
+      // this.$store.dispatch("union",{age:"456"})
+      //   .then(()=>{
+      //        console.log(this.NewData)
+      //   })
+
     },
     components: {
 

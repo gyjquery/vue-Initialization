@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
-import OrganizationalManagement from "../pages/OrganizationalManagement";
+import Home from "../pages/Home";
 export default new Router({
+  mode: 'history',  //去掉url中的#
   routes: [
     {
       path: '/',
-      name: 'OrganizationalManagement',
-      component: OrganizationalManagement
+      redirect: '/Home'
     },
     {
-      path: "/organizationalManagement",
-      component: OrganizationalManagement,
-      title: "贷款管理平台"
+      path: "/Home",
+      component: Home,
+      title: "首页"
     },
   ]
 })

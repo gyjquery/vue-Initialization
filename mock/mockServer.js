@@ -3,7 +3,5 @@
  */
 import Mock from 'mockjs'
 import msite from './msite.json'
-import newData from './newData.json'
 import apiList from '../src/api/apiList'
 Mock.mock(apiList.todayHourGraphData, msite)
-Mock.mock(apiList.newData, newData)
